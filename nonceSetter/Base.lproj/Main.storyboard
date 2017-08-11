@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Generator SetterVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GeneratorSetterVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,96 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GeneratorSetter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoL-fC-Wg7">
+                                <rect key="frame" x="81.5" y="144.5" width="212" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="d4a-lH-zX9">
+                                <rect key="frame" x="26" y="188.5" width="323" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Hgr-BI-Kht"/>
+                                    <constraint firstAttribute="height" constant="30" id="oqd-mh-NLX"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="kbDoneBtnPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="9S9-HJ-iLt"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPy-ks-Wnf">
+                                <rect key="frame" x="81.5" y="228.5" width="57" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Paste"/>
+                                <connections>
+                                    <action selector="btnPastePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Su7-Uw-bza"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9p-dR-igQ">
+                                <rect key="frame" x="236.5" y="228.5" width="57" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Set"/>
+                                <connections>
+                                    <action selector="btnSetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Huj-Pg-zav"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current generator:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sca-5s-Pka">
+                                <rect key="frame" x="85.5" y="318.5" width="204" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0xfe94a4faea3b33ff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTy-UI-PPo">
+                                <rect key="frame" x="71" y="358.5" width="233" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR: invalid generator" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzm-9d-3mS">
+                                <rect key="frame" x="24" y="396" width="327" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sca-5s-Pka" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2bY-h5-H3d"/>
+                            <constraint firstItem="d4a-lH-zX9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="3cy-9M-0pm"/>
+                            <constraint firstItem="Mzm-9d-3mS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="5vh-RG-ga1"/>
+                            <constraint firstItem="xPy-ks-Wnf" firstAttribute="leading" secondItem="YoL-fC-Wg7" secondAttribute="leading" id="7cQ-gR-vgn"/>
+                            <constraint firstItem="KTy-UI-PPo" firstAttribute="top" secondItem="Sca-5s-Pka" secondAttribute="bottom" constant="10" id="UEh-Og-N8P"/>
+                            <constraint firstItem="Sca-5s-Pka" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xo1-sB-v74"/>
+                            <constraint firstItem="d4a-lH-zX9" firstAttribute="top" secondItem="YoL-fC-Wg7" secondAttribute="bottom" constant="8" symbolic="YES" id="YFW-Lo-BB9"/>
+                            <constraint firstItem="U9p-dR-igQ" firstAttribute="top" secondItem="d4a-lH-zX9" secondAttribute="bottom" constant="10" id="ao9-Jn-N3g"/>
+                            <constraint firstItem="U9p-dR-igQ" firstAttribute="height" secondItem="xPy-ks-Wnf" secondAttribute="height" id="eaC-NE-Jyu"/>
+                            <constraint firstItem="d4a-lH-zX9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fPX-vQ-DKZ"/>
+                            <constraint firstItem="Mzm-9d-3mS" firstAttribute="top" secondItem="KTy-UI-PPo" secondAttribute="bottom" constant="8" id="huL-Wf-e6L"/>
+                            <constraint firstItem="Mzm-9d-3mS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ian-36-xMX"/>
+                            <constraint firstItem="U9p-dR-igQ" firstAttribute="trailing" secondItem="YoL-fC-Wg7" secondAttribute="trailing" id="jaZ-yD-PAJ"/>
+                            <constraint firstItem="KTy-UI-PPo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k5u-nZ-NcD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d4a-lH-zX9" secondAttribute="trailing" constant="10" id="l6W-Np-8zE"/>
+                            <constraint firstItem="YoL-fC-Wg7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lsA-ky-3e5"/>
+                            <constraint firstItem="U9p-dR-igQ" firstAttribute="width" secondItem="xPy-ks-Wnf" secondAttribute="width" id="m5j-7I-KlP"/>
+                            <constraint firstItem="xPy-ks-Wnf" firstAttribute="top" secondItem="d4a-lH-zX9" secondAttribute="bottom" constant="10" id="mew-hI-hvh"/>
+                            <constraint firstItem="Sca-5s-Pka" firstAttribute="top" secondItem="U9p-dR-igQ" secondAttribute="bottom" priority="900" constant="50" id="s63-Ht-Yre"/>
+                            <constraint firstItem="YoL-fC-Wg7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="vDb-MZ-Z12"/>
+                            <constraint firstItem="Sca-5s-Pka" firstAttribute="top" relation="greaterThanOrEqual" secondItem="U9p-dR-igQ" secondAttribute="bottom" constant="10" id="wyU-CT-Y2T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mzm-9d-3mS" secondAttribute="trailing" constant="8" id="z9Q-UB-fte"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="curGenLabel" destination="KTy-UI-PPo" id="CuG-mN-IJf"/>
+                        <outlet property="errorLabel" destination="Mzm-9d-3mS" id="ROe-1R-bDX"/>
+                        <outlet property="textfield" destination="d4a-lH-zX9" id="Nvx-4C-dKY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
