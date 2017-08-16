@@ -5,7 +5,8 @@ _We told you to save your blobs._
 ### About
 
 Lets you set your boot-nonce so you can restore with saved blobs.  
-For 64-bit devices only (for 32-bit, check out the [Phœnix Jailbreak](https://phoenixpwn.com)).
+For 64-bit devices only (for 32-bit, check out the [Phœnix Jailbreak](https://phoenixpwn.com)).  
+As always, use at your own risk.
 
 ### Download
 
