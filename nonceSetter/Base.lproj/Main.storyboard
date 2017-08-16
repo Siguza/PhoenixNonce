@@ -74,11 +74,20 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9f-s2-912">
+                                <rect key="frame" x="133" y="434" width="108" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="run exploit"/>
+                                <connections>
+                                    <action selector="btnPastePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0p-RE-YiS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Sca-5s-Pka" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2bY-h5-H3d"/>
                             <constraint firstItem="d4a-lH-zX9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="3cy-9M-0pm"/>
+                            <constraint firstItem="K9f-s2-912" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3cz-zS-cvo"/>
                             <constraint firstItem="Mzm-9d-3mS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="5vh-RG-ga1"/>
                             <constraint firstItem="xPy-ks-Wnf" firstAttribute="leading" secondItem="YoL-fC-Wg7" secondAttribute="leading" id="7cQ-gR-vgn"/>
                             <constraint firstItem="KTy-UI-PPo" firstAttribute="top" secondItem="Sca-5s-Pka" secondAttribute="bottom" constant="10" id="UEh-Og-N8P"/>
@@ -96,6 +105,7 @@
                             <constraint firstItem="U9p-dR-igQ" firstAttribute="width" secondItem="xPy-ks-Wnf" secondAttribute="width" id="m5j-7I-KlP"/>
                             <constraint firstItem="xPy-ks-Wnf" firstAttribute="top" secondItem="d4a-lH-zX9" secondAttribute="bottom" constant="10" id="mew-hI-hvh"/>
                             <constraint firstItem="Sca-5s-Pka" firstAttribute="top" secondItem="U9p-dR-igQ" secondAttribute="bottom" priority="900" constant="50" id="s63-Ht-Yre"/>
+                            <constraint firstItem="K9f-s2-912" firstAttribute="top" secondItem="Mzm-9d-3mS" secondAttribute="bottom" constant="8" id="ufD-sn-4NE"/>
                             <constraint firstItem="YoL-fC-Wg7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="vDb-MZ-Z12"/>
                             <constraint firstItem="Sca-5s-Pka" firstAttribute="top" relation="greaterThanOrEqual" secondItem="U9p-dR-igQ" secondAttribute="bottom" constant="10" id="wyU-CT-Y2T"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Mzm-9d-3mS" secondAttribute="trailing" constant="8" id="z9Q-UB-fte"/>
