@@ -6,6 +6,7 @@
 //  Copyright © 2017 tihmstar. All rights reserved.
 //
 
+#include "set.h"
 #import "GeneratorSetterVC.h"
 
 @interface GeneratorSetterVC ()
@@ -25,10 +26,16 @@
 }
 
 -(void)setGenerator:(NSString*)generator{
-    self.errorLabel.hidden = NO;
-    [self.errorLabel setTextColor:[UIColor greenColor]];
-    self.errorLabel.text = @"Success: generator set";
-
+    if(set_generator([generator UTF8String]))
+    {
+        self.errorLabel.hidden = NO;
+        [self.errorLabel setTextColor:[UIColor greenColor]];
+        self.errorLabel.text = @"Success: generator set";
+    }
+    else
+    {
+        [self failedWithError:[NSString stringWithFormat:@"Error: Failed to set generator"]];
+    }
 }
 
 -(void)failedWithError:(NSString*)error{
