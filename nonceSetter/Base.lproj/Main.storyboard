@@ -80,6 +80,7 @@
                                 <state key="normal" title="run exploit"/>
                                 <connections>
                                     <action selector="btnPastePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0p-RE-YiS"/>
+                                    <action selector="btnRunExploitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jW3-Ym-Ehf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -112,6 +113,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnRunExploit" destination="K9f-s2-912" id="Hj0-gw-8u0"/>
                         <outlet property="curGenLabel" destination="KTy-UI-PPo" id="CuG-mN-IJf"/>
                         <outlet property="errorLabel" destination="Mzm-9d-3mS" id="ROe-1R-bDX"/>
                         <outlet property="textfield" destination="d4a-lH-zX9" id="Nvx-4C-dKY"/>

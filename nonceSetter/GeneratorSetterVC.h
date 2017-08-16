@@ -12,9 +12,11 @@
 @property (weak, nonatomic) IBOutlet UITextField *textfield;
 @property (weak, nonatomic) IBOutlet UILabel *curGenLabel;
 @property (weak, nonatomic) IBOutlet UILabel *errorLabel;
+@property (weak, nonatomic) IBOutlet UIButton *btnRunExploit;
 - (IBAction)btnPastePressed:(id)sender;
 - (IBAction)btnSetPressed:(id)sender;
 - (IBAction)kbDoneBtnPressed:(id)sender;
+- (IBAction)btnRunExploitPressed:(id)sender;
 
 
 @end
