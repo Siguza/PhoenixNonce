@@ -28,7 +28,7 @@ typedef struct load_command mach_lc_t;
 #define LOG(str, args...) \
 do \
 { \
-    NSLog(@"" str " [%s:%u]\n", ##args, __FILE__, __LINE__); \
+    NSLog(@"" str "\n", ##args); \
 } while(0)
 
 #endif
