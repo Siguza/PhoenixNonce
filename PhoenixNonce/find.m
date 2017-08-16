@@ -1,4 +1,9 @@
-// Taken and modified from cl0ver
+/*
+ * find.m - Minimal offsets finder
+ *          Taken and modified from cl0ver
+ *
+ * Copyright (c) 2016-2017 Siguza
+ */
 
 #include <stdint.h>
 #include <string.h>             // strlen, strerror, memcmp

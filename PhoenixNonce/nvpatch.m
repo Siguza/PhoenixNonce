@@ -1,5 +1,6 @@
 /*
- * nvpatch.c - Patch kernel to unrestrict NVRAM variables
+ * nvpatch.m - Patch kernel to unrestrict NVRAM variables
+ *             Taken and modified from kern-utils
  *
  * Copyright (c) 2014 Samuel Groß
  * Copyright (c) 2016 Pupyshev Nikita
@@ -81,7 +82,7 @@ static vm_size_t kernel_write(task_t kernel_task, vm_address_t addr, vm_size_t s
     for(vm_address_t end = addr + size; addr < end; remainder -= size)
     {
         size = remainder > MAX_CHUNK_SIZE ? MAX_CHUNK_SIZE : remainder;
-        ret = vm_write(kernel_task, addr, (vm_offset_t)&((char*)buf)[bytes_written], size);
+        ret = vm_write(kernel_task, addr, (vm_offset_t)&((char*)buf)[bytes_written], (mach_msg_type_number_t)size);
         if(ret != KERN_SUCCESS)
         {
             LOG("vm_write error: %s", mach_error_string(ret));

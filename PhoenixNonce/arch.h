@@ -1,5 +1,6 @@
 /*
  * arch.h - Code to deal with different architectures.
+ *          Taken from kern-utils
  *
  * Copyright (c) 2014 Samuel Groß
  * Copyright (c) 2016-2017 Siguza

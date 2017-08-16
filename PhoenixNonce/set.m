@@ -1,3 +1,9 @@
+/*
+ * set.m - High-level handler to set boot nonce
+ *
+ * Copyright (c) 2017 Siguza & tihmstar
+ */
+
 #include <stdbool.h>
 #include <unistd.h>
 #include <mach/mach.h>

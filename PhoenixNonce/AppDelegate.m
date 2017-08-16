@@ -1,10 +1,8 @@
-//
-//  AppDelegate.m
-//  nonceSetter
-//
-//  Created by tihmstar on 11.08.17.
-//  Copyright © 2017 tihmstar. All rights reserved.
-//
+/*
+ * AppDelegate.m - Basic App stuff
+ *
+ * Copyright (c) 2017 Siguza & tihmstar
+ */
 
 #import "AppDelegate.h"
 

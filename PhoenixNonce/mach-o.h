@@ -1,5 +1,6 @@
 /*
  * mach-o.h - Code that deals with the Mach-O file format
+ *            Taken from kern-utils
  *
  * Copyright (c) 2012 comex
  * Copyright (c) 2016 Siguza

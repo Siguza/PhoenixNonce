@@ -1,10 +1,8 @@
-//
-//  main.m
-//  nonceSetter
-//
-//  Created by tihmstar on 11.08.17.
-//  Copyright © 2017 tihmstar. All rights reserved.
-//
+/*
+ * main.m - Helper file
+ *
+ * Copyright (c) 2017 Siguza & tihmstar
+ */
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"

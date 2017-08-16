@@ -7,40 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		684DF4B51F44CF4300F47447 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684DF4B41F44CF4300F47447 /* IOKit.framework */; };
 		877D1EE11F3E1FF500C60D67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 877D1EE01F3E1FF500C60D67 /* main.m */; };
 		877D1EE41F3E1FF500C60D67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 877D1EE31F3E1FF500C60D67 /* AppDelegate.m */; };
 		877D1EEA1F3E1FF500C60D67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877D1EE81F3E1FF500C60D67 /* Main.storyboard */; };
 		877D1EEC1F3E1FF500C60D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 877D1EEB1F3E1FF500C60D67 /* Assets.xcassets */; };
 		877D1EEF1F3E1FF500C60D67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877D1EED1F3E1FF500C60D67 /* LaunchScreen.storyboard */; };
-		877D1EFA1F3E1FF500C60D67 /* nonceSetterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 877D1EF91F3E1FF500C60D67 /* nonceSetterTests.m */; };
-		877D1F051F3E1FF500C60D67 /* nonceSetterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 877D1F041F3E1FF500C60D67 /* nonceSetterUITests.m */; };
 		877D1F171F3E242400C60D67 /* GeneratorSetterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 877D1F161F3E242400C60D67 /* GeneratorSetterVC.m */; };
 		87F42C381F44C196001F0724 /* exploit64.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F42C301F44C196001F0724 /* exploit64.m */; };
 		87F42C391F44C196001F0724 /* find.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F42C321F44C196001F0724 /* find.m */; };
 		87F42C3A1F44C196001F0724 /* nvpatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F42C351F44C196001F0724 /* nvpatch.m */; };
 		87F42C3B1F44C196001F0724 /* set.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F42C371F44C196001F0724 /* set.m */; };
-		87F42C3E1F44C222001F0724 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F42C3D1F44C222001F0724 /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		877D1EF61F3E1FF500C60D67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 877D1ED41F3E1FF400C60D67 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 877D1EDB1F3E1FF500C60D67;
-			remoteInfo = nonceSetter;
-		};
-		877D1F011F3E1FF500C60D67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 877D1ED41F3E1FF400C60D67 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 877D1EDB1F3E1FF500C60D67;
-			remoteInfo = nonceSetter;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		877D1EDC1F3E1FF500C60D67 /* nonceSetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nonceSetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		684DF4B41F44CF4300F47447 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = PhoenixNonce/IOKit.framework; sourceTree = "<group>"; };
+		877D1EDC1F3E1FF500C60D67 /* PhoenixNonce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoenixNonce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		877D1EE01F3E1FF500C60D67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		877D1EE21F3E1FF500C60D67 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		877D1EE31F3E1FF500C60D67 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,12 +30,6 @@
 		877D1EEB1F3E1FF500C60D67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		877D1EEE1F3E1FF500C60D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		877D1EF01F3E1FF500C60D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		877D1EF51F3E1FF500C60D67 /* nonceSetterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nonceSetterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		877D1EF91F3E1FF500C60D67 /* nonceSetterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nonceSetterTests.m; sourceTree = "<group>"; };
-		877D1EFB1F3E1FF500C60D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		877D1F001F3E1FF500C60D67 /* nonceSetterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nonceSetterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		877D1F041F3E1FF500C60D67 /* nonceSetterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nonceSetterUITests.m; sourceTree = "<group>"; };
-		877D1F061F3E1FF500C60D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		877D1F151F3E242400C60D67 /* GeneratorSetterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneratorSetterVC.h; sourceTree = "<group>"; };
 		877D1F161F3E242400C60D67 /* GeneratorSetterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratorSetterVC.m; sourceTree = "<group>"; };
 		87F42C2F1F44C196001F0724 /* exploit64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exploit64.h; sourceTree = "<group>"; };
@@ -65,7 +41,6 @@
 		87F42C351F44C196001F0724 /* nvpatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nvpatch.m; sourceTree = "<group>"; };
 		87F42C361F44C196001F0724 /* set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = set.h; sourceTree = "<group>"; };
 		87F42C371F44C196001F0724 /* set.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = set.m; sourceTree = "<group>"; };
-		87F42C3D1F44C222001F0724 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IOKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,54 +48,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87F42C3E1F44C222001F0724 /* IOKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		877D1EF21F3E1FF500C60D67 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		877D1EFD1F3E1FF500C60D67 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				684DF4B51F44CF4300F47447 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		877D1ED31F3E1FF400C60D67 = {
+		685913011F44C73900C82CB0 /* Exploit */ = {
 			isa = PBXGroup;
 			children = (
-				877D1EDE1F3E1FF500C60D67 /* nonceSetter */,
-				877D1EF81F3E1FF500C60D67 /* nonceSetterTests */,
-				877D1F031F3E1FF500C60D67 /* nonceSetterUITests */,
-				877D1EDD1F3E1FF500C60D67 /* Products */,
-				87F42C3C1F44C222001F0724 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		877D1EDD1F3E1FF500C60D67 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				877D1EDC1F3E1FF500C60D67 /* nonceSetter.app */,
-				877D1EF51F3E1FF500C60D67 /* nonceSetterTests.xctest */,
-				877D1F001F3E1FF500C60D67 /* nonceSetterUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		877D1EDE1F3E1FF500C60D67 /* nonceSetter */ = {
-			isa = PBXGroup;
-			children = (
-				877D1EE21F3E1FF500C60D67 /* AppDelegate.h */,
-				877D1EE31F3E1FF500C60D67 /* AppDelegate.m */,
-				877D1F151F3E242400C60D67 /* GeneratorSetterVC.h */,
 				87F42C2F1F44C196001F0724 /* exploit64.h */,
 				87F42C301F44C196001F0724 /* exploit64.m */,
 				87F42C311F44C196001F0724 /* find.h */,
@@ -130,46 +67,64 @@
 				87F42C351F44C196001F0724 /* nvpatch.m */,
 				87F42C361F44C196001F0724 /* set.h */,
 				87F42C371F44C196001F0724 /* set.m */,
+			);
+			name = Exploit;
+			sourceTree = "<group>";
+		};
+		685913021F44C75000C82CB0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				877D1EE21F3E1FF500C60D67 /* AppDelegate.h */,
+				877D1EE31F3E1FF500C60D67 /* AppDelegate.m */,
+				877D1F151F3E242400C60D67 /* GeneratorSetterVC.h */,
 				877D1F161F3E242400C60D67 /* GeneratorSetterVC.m */,
 				877D1EE81F3E1FF500C60D67 /* Main.storyboard */,
-				877D1EEB1F3E1FF500C60D67 /* Assets.xcassets */,
 				877D1EED1F3E1FF500C60D67 /* LaunchScreen.storyboard */,
-				877D1EF01F3E1FF500C60D67 /* Info.plist */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		877D1ED31F3E1FF400C60D67 = {
+			isa = PBXGroup;
+			children = (
+				877D1EDE1F3E1FF500C60D67 /* PhoenixNonce */,
+				877D1EDD1F3E1FF500C60D67 /* Products */,
+				87F42C3C1F44C222001F0724 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		877D1EDD1F3E1FF500C60D67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				877D1EDC1F3E1FF500C60D67 /* PhoenixNonce.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		877D1EDE1F3E1FF500C60D67 /* PhoenixNonce */ = {
+			isa = PBXGroup;
+			children = (
+				877D1EEB1F3E1FF500C60D67 /* Assets.xcassets */,
+				685913021F44C75000C82CB0 /* UI */,
+				685913011F44C73900C82CB0 /* Exploit */,
 				877D1EDF1F3E1FF500C60D67 /* Supporting Files */,
 			);
-			path = nonceSetter;
+			path = PhoenixNonce;
 			sourceTree = "<group>";
 		};
 		877D1EDF1F3E1FF500C60D67 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				877D1EF01F3E1FF500C60D67 /* Info.plist */,
 				877D1EE01F3E1FF500C60D67 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		877D1EF81F3E1FF500C60D67 /* nonceSetterTests */ = {
-			isa = PBXGroup;
-			children = (
-				877D1EF91F3E1FF500C60D67 /* nonceSetterTests.m */,
-				877D1EFB1F3E1FF500C60D67 /* Info.plist */,
-			);
-			path = nonceSetterTests;
-			sourceTree = "<group>";
-		};
-		877D1F031F3E1FF500C60D67 /* nonceSetterUITests */ = {
-			isa = PBXGroup;
-			children = (
-				877D1F041F3E1FF500C60D67 /* nonceSetterUITests.m */,
-				877D1F061F3E1FF500C60D67 /* Info.plist */,
-			);
-			path = nonceSetterUITests;
-			sourceTree = "<group>";
-		};
 		87F42C3C1F44C222001F0724 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				87F42C3D1F44C222001F0724 /* IOKit.framework */,
+				684DF4B41F44CF4300F47447 /* IOKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		877D1EDB1F3E1FF500C60D67 /* nonceSetter */ = {
+		877D1EDB1F3E1FF500C60D67 /* PhoenixNonce */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 877D1F091F3E1FF500C60D67 /* Build configuration list for PBXNativeTarget "nonceSetter" */;
+			buildConfigurationList = 877D1F091F3E1FF500C60D67 /* Build configuration list for PBXNativeTarget "PhoenixNonce" */;
 			buildPhases = (
 				877D1ED81F3E1FF500C60D67 /* Sources */,
 				877D1ED91F3E1FF500C60D67 /* Frameworks */,
@@ -189,46 +144,10 @@
 			);
 			dependencies = (
 			);
-			name = nonceSetter;
-			productName = nonceSetter;
-			productReference = 877D1EDC1F3E1FF500C60D67 /* nonceSetter.app */;
+			name = PhoenixNonce;
+			productName = PhoenixNonce;
+			productReference = 877D1EDC1F3E1FF500C60D67 /* PhoenixNonce.app */;
 			productType = "com.apple.product-type.application";
-		};
-		877D1EF41F3E1FF500C60D67 /* nonceSetterTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 877D1F0C1F3E1FF500C60D67 /* Build configuration list for PBXNativeTarget "nonceSetterTests" */;
-			buildPhases = (
-				877D1EF11F3E1FF500C60D67 /* Sources */,
-				877D1EF21F3E1FF500C60D67 /* Frameworks */,
-				877D1EF31F3E1FF500C60D67 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				877D1EF71F3E1FF500C60D67 /* PBXTargetDependency */,
-			);
-			name = nonceSetterTests;
-			productName = nonceSetterTests;
-			productReference = 877D1EF51F3E1FF500C60D67 /* nonceSetterTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		877D1EFF1F3E1FF500C60D67 /* nonceSetterUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 877D1F0F1F3E1FF500C60D67 /* Build configuration list for PBXNativeTarget "nonceSetterUITests" */;
-			buildPhases = (
-				877D1EFC1F3E1FF500C60D67 /* Sources */,
-				877D1EFD1F3E1FF500C60D67 /* Frameworks */,
-				877D1EFE1F3E1FF500C60D67 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				877D1F021F3E1FF500C60D67 /* PBXTargetDependency */,
-			);
-			name = nonceSetterUITests;
-			productName = nonceSetterUITests;
-			productReference = 877D1F001F3E1FF500C60D67 /* nonceSetterUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -241,22 +160,12 @@
 				TargetAttributes = {
 					877D1EDB1F3E1FF500C60D67 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 467NK5ZZV5;
+						DevelopmentTeam = XXXXXXXXXX;
 						ProvisioningStyle = Automatic;
-					};
-					877D1EF41F3E1FF500C60D67 = {
-						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 877D1EDB1F3E1FF500C60D67;
-					};
-					877D1EFF1F3E1FF500C60D67 = {
-						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 877D1EDB1F3E1FF500C60D67;
 					};
 				};
 			};
-			buildConfigurationList = 877D1ED71F3E1FF400C60D67 /* Build configuration list for PBXProject "nonceSetter" */;
+			buildConfigurationList = 877D1ED71F3E1FF400C60D67 /* Build configuration list for PBXProject "PhoenixNonce" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -269,9 +178,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				877D1EDB1F3E1FF500C60D67 /* nonceSetter */,
-				877D1EF41F3E1FF500C60D67 /* nonceSetterTests */,
-				877D1EFF1F3E1FF500C60D67 /* nonceSetterUITests */,
+				877D1EDB1F3E1FF500C60D67 /* PhoenixNonce */,
 			);
 		};
 /* End PBXProject section */
@@ -284,20 +191,6 @@
 				877D1EEF1F3E1FF500C60D67 /* LaunchScreen.storyboard in Resources */,
 				877D1EEC1F3E1FF500C60D67 /* Assets.xcassets in Resources */,
 				877D1EEA1F3E1FF500C60D67 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		877D1EF31F3E1FF500C60D67 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		877D1EFE1F3E1FF500C60D67 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,36 +211,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		877D1EF11F3E1FF500C60D67 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				877D1EFA1F3E1FF500C60D67 /* nonceSetterTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		877D1EFC1F3E1FF500C60D67 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				877D1F051F3E1FF500C60D67 /* nonceSetterUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		877D1EF71F3E1FF500C60D67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 877D1EDB1F3E1FF500C60D67 /* nonceSetter */;
-			targetProxy = 877D1EF61F3E1FF500C60D67 /* PBXContainerItemProxy */;
-		};
-		877D1F021F3E1FF500C60D67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 877D1EDB1F3E1FF500C60D67 /* nonceSetter */;
-			targetProxy = 877D1F011F3E1FF500C60D67 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		877D1EE81F3E1FF500C60D67 /* Main.storyboard */ = {
@@ -465,18 +329,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 467NK5ZZV5;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				HEADER_SEARCH_PATHS = /opt/theos/include;
-				INFOPLIST_FILE = nonceSetter/Info.plist;
+				DEVELOPMENT_TEAM = XXXXXXXXXX;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/PhoenixNonce";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/PhoenixNonce/Headers";
+				INFOPLIST_FILE = PhoenixNonce/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.tihmstar.nonceSetter;
+				PRODUCT_BUNDLE_IDENTIFIER = net.siguza.PhoenixNonce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
@@ -484,71 +347,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 467NK5ZZV5;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				HEADER_SEARCH_PATHS = /opt/theos/include;
-				INFOPLIST_FILE = nonceSetter/Info.plist;
+				DEVELOPMENT_TEAM = XXXXXXXXXX;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/PhoenixNonce";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/PhoenixNonce/Headers";
+				INFOPLIST_FILE = PhoenixNonce/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.tihmstar.nonceSetter;
+				PRODUCT_BUNDLE_IDENTIFIER = net.siguza.PhoenixNonce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		877D1F0D1F3E1FF500C60D67 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = nonceSetterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.tihmstar.nonceSetterTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nonceSetter.app/nonceSetter";
-			};
-			name = Debug;
-		};
-		877D1F0E1F3E1FF500C60D67 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = nonceSetterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.tihmstar.nonceSetterTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nonceSetter.app/nonceSetter";
-			};
-			name = Release;
-		};
-		877D1F101F3E1FF500C60D67 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = nonceSetterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.tihmstar.nonceSetterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = nonceSetter;
-			};
-			name = Debug;
-		};
-		877D1F111F3E1FF500C60D67 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = nonceSetterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.tihmstar.nonceSetterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = nonceSetter;
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		877D1ED71F3E1FF400C60D67 /* Build configuration list for PBXProject "nonceSetter" */ = {
+		877D1ED71F3E1FF400C60D67 /* Build configuration list for PBXProject "PhoenixNonce" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				877D1F071F3E1FF500C60D67 /* Debug */,
@@ -557,29 +373,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		877D1F091F3E1FF500C60D67 /* Build configuration list for PBXNativeTarget "nonceSetter" */ = {
+		877D1F091F3E1FF500C60D67 /* Build configuration list for PBXNativeTarget "PhoenixNonce" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				877D1F0A1F3E1FF500C60D67 /* Debug */,
 				877D1F0B1F3E1FF500C60D67 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		877D1F0C1F3E1FF500C60D67 /* Build configuration list for PBXNativeTarget "nonceSetterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				877D1F0D1F3E1FF500C60D67 /* Debug */,
-				877D1F0E1F3E1FF500C60D67 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		877D1F0F1F3E1FF500C60D67 /* Build configuration list for PBXNativeTarget "nonceSetterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				877D1F101F3E1FF500C60D67 /* Debug */,
-				877D1F111F3E1FF500C60D67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

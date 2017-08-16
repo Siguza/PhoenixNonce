@@ -1,3 +1,10 @@
+/*
+ * find.h - Minimal offsets finder
+ *          Taken and modified from cl0ver
+ *
+ * Copyright (c) 2016-2017 Siguza
+ */
+
 #ifndef FIND_H
 #define FIND_H
 

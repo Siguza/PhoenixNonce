@@ -1,10 +1,8 @@
-//
-//  GeneratorSetterVC.m
-//  nonceSetter
-//
-//  Created by tihmstar on 11.08.17.
-//  Copyright © 2017 tihmstar. All rights reserved.
-//
+/*
+ * GeneratorSetterVC.m - UI stuff
+ *
+ * Copyright (c) 2017 Siguza & tihmstar
+ */
 
 #include "set.h"
 #import "GeneratorSetterVC.h"
@@ -69,7 +67,4 @@
     [self.textfield endEditing:YES];
 }
 
-
-- (IBAction)btnRunExploitPressed:(id)sender {
-}
 @end

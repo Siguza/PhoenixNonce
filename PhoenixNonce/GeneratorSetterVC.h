@@ -1,10 +1,8 @@
-//
-//  GeneratorSetterVC.h
-//  nonceSetter
-//
-//  Created by tihmstar on 11.08.17.
-//  Copyright © 2017 tihmstar. All rights reserved.
-//
+/*
+ * GeneratorSetterVC.h - UI stuff
+ *
+ * Copyright (c) 2017 Siguza & tihmstar
+ */
 
 #import <UIKit/UIKit.h>
 
@@ -12,11 +10,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *textfield;
 @property (weak, nonatomic) IBOutlet UILabel *curGenLabel;
 @property (weak, nonatomic) IBOutlet UILabel *errorLabel;
-@property (weak, nonatomic) IBOutlet UIButton *btnRunExploit;
 - (IBAction)btnPastePressed:(id)sender;
 - (IBAction)btnSetPressed:(id)sender;
 - (IBAction)kbDoneBtnPressed:(id)sender;
-- (IBAction)btnRunExploitPressed:(id)sender;
-
 
 @end

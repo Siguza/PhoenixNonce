@@ -1,3 +1,12 @@
+/*
+ * nvpatch.h - Patch kernel to unrestrict NVRAM variables
+ *             Taken and modified from kern-utils
+ *
+ * Copyright (c) 2014 Samuel Groß
+ * Copyright (c) 2016 Pupyshev Nikita
+ * Copyright (c) 2017 Siguza
+ */
+
 #ifndef NVPATCH_H
 #define NVPATCH_H
 
