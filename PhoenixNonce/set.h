@@ -11,4 +11,6 @@
 
 bool set_generator(const char *gen);
 
+bool dump_apticket(const char *to);
+
 #endif

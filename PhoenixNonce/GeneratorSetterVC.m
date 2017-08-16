@@ -67,4 +67,19 @@
     [self.textfield endEditing:YES];
 }
 
+- (IBAction)btnDumpPressed:(id)sender {
+    self.errorLabel.hidden = YES;
+    bool ret = dump_apticket([[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"apticket.der"].UTF8String);
+    if(ret)
+    {
+        self.errorLabel.hidden = NO;
+        [self.errorLabel setTextColor:[UIColor greenColor]];
+        self.errorLabel.text = @"Success: Dumped APTicket";
+    }
+    else
+    {
+        [self failedWithError:[NSString stringWithFormat:@"Error: Failed to dump APTicket"]];
+    }
+}
+
 @end

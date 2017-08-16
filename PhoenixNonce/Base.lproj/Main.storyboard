@@ -34,7 +34,7 @@
                                 </connections>
                             </textField>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="&lt;placeholder&gt;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzm-9d-3mS">
-                                <rect key="frame" x="6" y="397" width="309" height="30"/>
+                                <rect key="frame" x="6" y="367" width="309" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -75,9 +75,24 @@ Use at your own risk and all that.</string>
                                     <action selector="btnSetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Huj-Pg-zav"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Na-NC-MXX">
+                                <rect key="frame" x="81" y="424" width="159" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Dump APTicket"/>
+                                <connections>
+                                    <action selector="btnDumpPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hgC-AG-KkX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(Can be retrieved with iTunes)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yku-tn-kPV">
+                                <rect key="frame" x="8" y="461" width="304" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="7Na-NC-MXX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2jw-SB-yDE"/>
                             <constraint firstItem="d4a-lH-zX9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-13" id="91C-hq-btj"/>
                             <constraint firstItem="xPy-ks-Wnf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="37" id="EOP-wP-uz0"/>
                             <constraint firstItem="zpF-9Q-omD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="0.5" id="Gqp-QH-xV0"/>
@@ -86,11 +101,14 @@ Use at your own risk and all that.</string>
                             <constraint firstItem="YoL-fC-Wg7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N5y-9Z-Sps"/>
                             <constraint firstItem="YoL-fC-Wg7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-209" id="PSJ-6P-yzy"/>
                             <constraint firstItem="Mzm-9d-3mS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pkg-Id-moB"/>
-                            <constraint firstItem="Mzm-9d-3mS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="128" id="R7c-zo-w1S"/>
+                            <constraint firstItem="Mzm-9d-3mS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="98" id="R7c-zo-w1S"/>
+                            <constraint firstItem="7Na-NC-MXX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="160" id="VNJ-iw-8tw"/>
                             <constraint firstItem="7tU-3Y-b4T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-157" id="VeQ-vj-tfN"/>
                             <constraint firstItem="U9p-dR-igQ" firstAttribute="height" secondItem="xPy-ks-Wnf" secondAttribute="height" id="bgd-NE-1zd"/>
+                            <constraint firstItem="Yku-tn-kPV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="190.5" id="f0L-z7-1yk"/>
                             <constraint firstItem="d4a-lH-zX9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="joz-Q4-h0O"/>
                             <constraint firstItem="7tU-3Y-b4T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n2o-Qa-3Tw"/>
+                            <constraint firstItem="Yku-tn-kPV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rnN-MH-Arf"/>
                             <constraint firstItem="xPy-ks-Wnf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-67.5" id="ttA-Gu-Lcv"/>
                             <constraint firstItem="zpF-9Q-omD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-82.5" id="uaX-HA-Zlc"/>
                             <constraint firstItem="U9p-dR-igQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="61.5" id="xU7-9x-bIj"/>

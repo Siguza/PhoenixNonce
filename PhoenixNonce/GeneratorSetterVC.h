@@ -13,5 +13,6 @@
 - (IBAction)btnPastePressed:(id)sender;
 - (IBAction)btnSetPressed:(id)sender;
 - (IBAction)kbDoneBtnPressed:(id)sender;
+- (IBAction)btnDumpPressed:(id)sender;
 
 @end
